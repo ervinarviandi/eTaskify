@@ -20,10 +20,10 @@ const Headers = () => {
         <div className='lg:max-w-6xl mx-auto p-5 flex justify-between'>
             <h1 className={`${flavors.className} text-2xl font-bold text-violet-400 font-roboto`}>eTaskify</h1>
             <div className='flex justify-between items-center gap-x-2 z-50'>
+              <Link href={"/"}><HiOutlineHome size={20}/></Link>
               <div className='pt-2.5'>
                 <Popup />
               </div>
-              <Link href={"/"}><HiOutlineHome size={20}/></Link>
               <div className='z-50'>
               <ModeToggle/>
               </div>

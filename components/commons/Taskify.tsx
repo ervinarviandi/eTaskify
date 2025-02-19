@@ -117,7 +117,7 @@ const TodoList = () => {
         onKeyPress={(e) => e.key === 'Enter' && addTodo()}
         placeholder="Buat tugas baru"
         />
-      <button onClick={addTodo}  className={` ${sora.className} bg-violet-400 py-2 px-3 rounded-r-xl flex items-center text-sm gap-2 shadow-lg `}>Add Task</button>
+      <button onClick={addTodo}  className={` ${sora.className} bg-violet-400 py-2 px-3 rounded-r-xl flex items-center text-sm gap-2 shadow-lg `}>Tambah</button>
         </div>
         <div className='flex justify-center'>
       <ul className='w-full max-w-md mb-10 overflow-hidden z-50  mt-10 '>
