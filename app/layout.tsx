@@ -3,7 +3,7 @@ import {  Sora } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/atoms/theme-provider";
 import NextTopLoader from "nextjs-toploader"
-
+import {Toaster} from "@/components/ui/sonner"
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
@@ -27,6 +27,7 @@ export default function RootLayout({
         className={`${sora.variable} antialiased`}
       >
        
+        <Toaster/>
         <ThemeProvider  
             attribute="class"
             defaultTheme="system"
