@@ -11,6 +11,7 @@ import { Sora } from 'next/font/google';
 import { ChevronRight } from "lucide-react";
 import { AnimatedGradientText } from '@/components/magicui/animated-gradient-text';
 import "@/app/globals.css";
+import { toast } from 'sonner';
 
 
 
@@ -50,6 +51,7 @@ const TodoList = () => {
       setTodos([...todos, newTodo]);
       setInputValue('');
     }
+    toast("✅ Tugas berhasil di tambahkan ")
   };
 
   const toggleTodo = (id: number) => {
@@ -61,6 +63,7 @@ const TodoList = () => {
   };
 
   const deleteTodo = (id: number) => {
+    toast("🗑️ Tugas berhasil dihapus")
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
@@ -70,6 +73,7 @@ const TodoList = () => {
   };
 
   const saveEdit = (id: number) => {
+    toast("✅ Tugas berhasil diedit")
     if (editText.trim() !== '') {
       setTodos(
         todos.map((todo) =>
@@ -82,6 +86,7 @@ const TodoList = () => {
   };
 
   const cancelEdit = () => {
+    toast("❌ Tugas batal diedit ")
     setEditingTodoId(null); 
     setEditText(''); 
   };

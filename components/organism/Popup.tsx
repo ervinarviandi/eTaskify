@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import {Label} from "@/components/ui/label"
 import {Button} from "@/components/ui/button"
 import { toast } from 'sonner'
-
+import Acordion from "@/components/organism/Acordion"
 import {
     Dialog,
     DialogContent,
@@ -43,16 +43,14 @@ const Popup = () => {
   <DialogContent>
     <DialogHeader>
       <DialogTitle>Informasi</DialogTitle>
-      <DialogDescription>
-        Terimakasih telah menggunakan aplikasi etaskify sederhana ini, kedepannya akan coba di kembangkan lagi, ✌️☺️🪄
+      <DialogDescription className='lg:text-md text-xs'>
+        Terimakasih telah menggunakan aplikasi eTaskify sederhana ini, kedepannya akan coba di kembangkan lagi, ✌️☺️🪄
       </DialogDescription>
-      <DialogDescription>
+      <DialogDescription className='lg:text-md text-xs'>
         Tidak disarankan untuk mencatat hal-hal pribadi yang bisa disalahgunakan oleh pihak yang tidak bertanggung jawab 👌 
       </DialogDescription>
-      <DialogDescription>
-        Aplikasi ini tadinya akan di instal sebuah package yang memungkinkan aplikasi ini bisa berjalan dan terinstal di smartphone, dan bisa digunakan tanpa bantuan internet. lain waktu akan coba di kembangkan kembali. ☺️🔮💡  
-      </DialogDescription>
-      <DialogTitle className='text-xs'>Share ke teman-teman yang lain, agar mereka bisa menggunakannya juga !</DialogTitle>
+      <Acordion/>
+      <DialogTitle className='text-xs pt-3'>Share ke teman-teman yang lain, agar mereka bisa menggunakannya juga !</DialogTitle>
       <div className="flex items-center space-x-2">
           <div className="grid flex-1 gap-2">
             <Label htmlFor="link" className="sr-only">
