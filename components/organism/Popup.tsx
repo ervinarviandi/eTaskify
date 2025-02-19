@@ -44,7 +44,7 @@ const Popup = () => {
     <DialogHeader>
       <DialogTitle>Informasi</DialogTitle>
       <DialogDescription className='lg:text-md text-xs'>
-        Terimakasih telah menggunakan aplikasi eTaskify sederhana ini, kedepannya akan coba di kembangkan lagi, ✌️☺️🪄
+        Terimakasih telah menggunakan aplikasi eTaskify sederhana ini, setiap tugas yang tercatat tidak akan terlihat oleh orang lain  ✌️☺️🪄
       </DialogDescription>
       <DialogDescription className='lg:text-md text-xs'>
         Tidak disarankan untuk mencatat hal-hal pribadi yang bisa disalahgunakan oleh pihak yang tidak bertanggung jawab 👌 
